@@ -17,9 +17,9 @@ public:
         int j = h.size()-1;
          int maxA = 0; 
         while(i<j){
-           int breadth = j-i;
-           int minh = min(h[i],h[j]);
-           area = minh*breadth;
+        //    int breadth = j-i;
+        //    int minh = min(h[i],h[j]);
+           area =  min(h[i],h[j]) *(  j-i);
             maxA = max(area,maxA);  
 
             if(h[i]>h[j]){

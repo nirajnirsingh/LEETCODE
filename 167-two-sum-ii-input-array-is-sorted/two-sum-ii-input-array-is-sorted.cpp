@@ -22,15 +22,12 @@ public:
         int temp = num[first]+num[second];
 
         if(temp == target){
-         v.push_back(first+1);   
-         v.push_back(second+1);
-         return v;
-       // return {first+1,second+1};
+            return {first+1,second+1};
         }
         else if(temp>target){
             second--;
         }
-        else if(temp<target){
+        else{
             first++;
         }
       }

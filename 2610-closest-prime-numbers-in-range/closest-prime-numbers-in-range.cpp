@@ -53,7 +53,7 @@ public:
         isPrime[0] = false;
         isPrime[1] = false;
 
-        for(int i=2; i<right; i++){
+        for(int i=2; i*i<=right; i++){
            
            if( isPrime[i]){
 

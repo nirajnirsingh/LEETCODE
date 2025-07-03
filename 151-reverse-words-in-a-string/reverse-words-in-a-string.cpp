@@ -14,6 +14,7 @@ public:
             while (i < n && s[i] != ' ') {
                 word += s[i++];
             }
+            cout<<i<<" ";
             reverse(word.begin(), word.end());
 
             
@@ -21,7 +22,7 @@ public:
             if (word.size() > 0)
                 ans += " " + word;
         }
-        ans.erase(ans.begin());
-        return ans;
+        //ans.erase(ans.begin());
+        return ans.substr(1);
     }
 };

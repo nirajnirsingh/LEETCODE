@@ -37,7 +37,7 @@ public:
                 count++;
                 j++;
             }
-            cout<<j<<" ";
+            //cout<<j<<" ";
             if(count>1){
               string sh =  to_string(count);
               for(int k=0; k<sh.size(); k++){

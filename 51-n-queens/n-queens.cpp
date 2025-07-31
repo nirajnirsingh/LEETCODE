@@ -27,7 +27,7 @@ public:
         j=row-1;
         k=col+1;
 
-        while(j>=0 && k>0){
+        while(j>=0 && k>=0){
 
             if(board[j][k] == 'Q') return false;
 

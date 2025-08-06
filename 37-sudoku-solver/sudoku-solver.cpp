@@ -50,7 +50,7 @@ public:
 
         for(int i=1; i<= 9; i++){
 
-             if(board[row][col] == '.'){
+             
                  if(isValid(board, row, col, '0'+i))
                 {
                     board[row][col] = '0'+i;
@@ -59,7 +59,7 @@ public:
                    }
                     board[row][col] = '.';
                 }
-             }
+             
         }
         return false;
     }

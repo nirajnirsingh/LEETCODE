@@ -3,11 +3,15 @@ public:
 
     int gcd(int a, int b){
 
-        if(b == 1) return a;
+        // if(b == 1) return a;
 
-        b %= a;
-        if(b==0)return a;
-        return gcd(b,a);
+        // b %= a;
+        // if(b==0)return a;
+        // return gcd(b,a);
+
+        if(b ==0) return 1;
+        if(a%b == 0)return b;
+        return gcd(b,b%a);
     }
     int gcdOfOddEvenSums(int n) {
 

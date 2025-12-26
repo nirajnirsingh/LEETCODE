@@ -12,12 +12,13 @@ public:
             cnt[s[high]]++;
            
 
-            for(auto i:cnt){
-                if(i.second > 1){
+            
+                while(cnt.size()<high-low+1){
                     cnt[s[low]]--;
+                    if(cnt[s[low]]==0) cnt.erase(s[low]);
                     low++;
                 }
-            }
+            
             len = high - low + 1; 
             max_len = max(max_len,len);
        }

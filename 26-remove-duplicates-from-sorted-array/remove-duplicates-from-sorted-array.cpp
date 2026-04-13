@@ -36,18 +36,35 @@ public:
 
         ///////////////////////
 
-        int j = 0;
+        // int j = 0;
 
-        for(int i =0; i<nums.size(); i++){
-            if(nums[j] != nums[i]){
-                nums[j+1] = nums[i];
-                j++;
+        // for(int i =0; i<nums.size(); i++){
+        //     if(nums[j] != nums[i]){
+        //         nums[j+1] = nums[i];
+        //         j++;
+        //     }
+        // }
+        // // vector<int>v;
+        // // for(int i=0; i<=j; i++)
+        // //  v.push_back(nums[i];)
+
+        // return j+1;
+
+        int i=0;
+        vector<int>v;
+        v.push_back(nums[i]);
+
+        for(int j=1; j<nums.size(); j++){
+            if(nums[i] != nums[j]){
+                v.push_back(nums[j]);
+                i=j;
             }
+        
+            
         }
-        // vector<int>v;
-        // for(int i=0; i<=j; i++)
-        //  v.push_back(nums[i];)
+        nums = v;
 
-        return j+1;
+        return nums.size();
+
     }
 };
